@@ -1,0 +1,28 @@
+<div class="container-fluid page m-0 px-3 h-100">
+  <div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <app-header></app-header>
+  <div class="row page__content">
+    <div class="col-small d-flex justify-content-center">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- <div class="col-2">
+        <app-car-filters (brandChange)="selectBrand($event)" (yearChange)="selectYear($event)"></app-car-filters>
+    </div>
+    <div class="col">
+        
+        <app-card-grid [carsList]="filteredList()"></app-card-grid>
+        @for (car of cars; track car; let i=$index) {
+            <app-card [car]="car"></app-card>
+            <app-car-model [brandLogo]="car.brand"></app-car-model>
+        }
+    </div> -->
+  </div>
+</div>

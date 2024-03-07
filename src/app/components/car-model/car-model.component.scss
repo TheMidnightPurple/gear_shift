@@ -1,0 +1,44 @@
+.model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 630px;
+
+    &__loading-container {
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin-top: -100px;
+    }
+
+    &__opening_logo {
+        height: 200px;
+        width: 200px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation: zoom 2s normal    
+    }
+}
+
+#progress-bar {
+    width: 30%;
+    margin-top: 0.5%;
+    height: 2%;
+}
+
+#canvas-box {
+    display: none;
+}
+
+@keyframes zoom {
+    0% {
+      background-size: 80%;
+    }
+    100% {
+      background-size: 100%;
+    }
+}

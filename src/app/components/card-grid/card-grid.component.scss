@@ -1,0 +1,24 @@
+.grid {
+    min-height: 79vh;
+}
+
+.grid-no-results {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+mat-paginator {
+    background-color: #ececec;
+    border-radius: 15px;
+    width: 25%;
+}
+
+
+.car {
+    cursor: pointer;
+    transition: ease-in 0.2s;
+    
+    &:hover {
+        transform: scale(1.02);
+    }
+}

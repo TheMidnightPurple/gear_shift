@@ -1,0 +1,37 @@
+<div class="container-fluid model h-100">
+    <div class="row h-100">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-small d-flex">
+                    <button mat-icon-button aria-label="back" class="model__back" (click)="navigateBack()">
+                        <mat-icon>chevron_left</mat-icon>
+                    </button>
+                    <div class="model__retro">Back</div>
+                </div>
+                <div class="col d-flex justify-content-start">
+                    <div class="model__test">
+                        <app-card [car]="selectedCar"></app-card>
+                        <!-- <img src="../../../assets/rs6.png" width="400"> -->
+                    </div>
+                    <!-- <div class="model__name">{{selectedCar?.brand}} {{correctModel()}}</div>
+                    <div class="model__type">{{selectedCar?.year}}</div> -->
+                </div>
+            </div>
+            <div class="row d-flex align-items-center model__car">
+                <app-car-model [car]="selectedCar"></app-car-model>
+            </div>
+            <!-- <div class="row mt-5 model__stats">
+                <app-car-stats></app-car-stats>
+            </div> -->
+        </div>
+        <!-- <div class="col-small d-flex justify-content-start">
+            <mat-divider vertical class="h-100"></mat-divider>
+        </div> -->
+        <div class="col-auto">
+            <!-- <app-brand-details [car]="selectedCar"></app-brand-details> -->
+            <!-- <app-car-drivetrain></app-car-drivetrain> -->
+            <!-- <app-brand-gallery></app-brand-gallery> -->
+            <!-- <app-track-lap-time></app-track-lap-time> -->
+        </div>
+    </div>
+</div>

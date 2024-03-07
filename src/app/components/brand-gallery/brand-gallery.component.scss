@@ -1,0 +1,39 @@
+.gallery {
+    height: 400px;
+
+    &__factory-left {
+        border-radius: 15px 0px 0px 0px;
+        border: 5px solid rgb(255, 255, 255);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    &__factory-right {
+        border-radius: 0px 15px 0px 0px;
+        border: 5px solid rgb(255, 255, 255);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.map {
+    height: 500px;
+
+    &__location {
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 0px 0px 15px 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.model {
+    height: 540px;
+
+    &__display {
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 0px 0px 15px 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

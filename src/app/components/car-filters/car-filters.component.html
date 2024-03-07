@@ -1,0 +1,61 @@
+<div class="container-fluid car-filters">
+    <div class="row">
+        <div class="col car-filters__title d-flex align-items-center">
+            Filters
+        </div>
+        <div class="col car-filters__reset d-flex align-items-center justify-content-end">
+            <button mat-button color="primary" (click)="resetFilters()">Reset</button>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col cars-filters__brand">
+            <mat-form-field class="w-100">
+                <mat-label>Brand</mat-label>
+                <mat-select [formControl]="brands" (selectionChange)="changeBrand($event.value)">
+                  @for (brand of brandsList; track brand) {
+                    <mat-option [value]="brand">{{brand}}</mat-option>
+                  }
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col cars-filters__brand">
+            <mat-form-field class="w-100">
+                <mat-label>Model</mat-label>
+                <mat-select [formControl]="models">
+                  @for (model of modelsList; track model) {
+                    <mat-option [value]="model">{{model}}</mat-option>
+                  }
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col cars-filters__year">
+            <mat-form-field class="w-100">
+                <mat-label>Year</mat-label>
+                <mat-select [formControl]="years" (selectionChange)="changeYear($event.value)">
+                  @for (year of yearsList; track year) {
+                    <mat-option [value]="year">{{year}}</mat-option>
+                  }
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">
+            <div class="car-filters__filter-name">
+                Rarity
+            </div>
+            <mat-grid-list cols="2" rowHeight="50px" gutterSize="5px">
+                @for (rarity of raritiesList; track rarity) {
+                    <mat-grid-tile class="car-filters__color-box">
+                        <mat-checkbox class="w-100" (change)="selectRarity(rarity, $event.checked)">
+                            <div class="d-flex align-items-center">
+                                <div class="car-filters__color-circle" [style]="{'background-color': rarity.hexcode}"></div>
+                                <div class="car-filters__color-name">{{rarity.name}}</div>
+                            </div>
+                        </mat-checkbox>
+                    </mat-grid-tile>
+                }
+            </mat-grid-list>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid w-100 h-100">
+    @if (carsList.length > 0) {
+        <mat-grid-list cols="3" rowHeight="280px" class="grid">
+            @for (car of carsList.slice(pageSize * pageIndex, pageSize * (1 + pageIndex)); track car) {
+                <mat-grid-tile [id]="car.id">
+                    <app-card class="car" [car]="car" (click)="navigateToCar(car)"></app-card>
+                </mat-grid-tile>
+            }
+        </mat-grid-list>
+        <div class="row w-100 d-flex justify-content-end pe-1">
+            <mat-paginator #paginator
+                class="cards-paginator"
+                (page)="handlePageEvent($event)"
+                [length]="length"
+                [pageSize]="pageSize"
+                [pageIndex]="pageIndex"
+                [hidePageSize]="true"
+                aria-label="Select page">
+            </mat-paginator>
+        </div>
+    }        
+    @else {
+        <div class="grid-no-results h-100 w-100">
+            <app-no-results></app-no-results>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Black",
+        "hexCode": "#000000"
+    },
+    {
+        "name": "Blue",
+        "hexCode": "#3a80f4"
+    },
+    {
+        "name": "Silver",
+        "hexCode": "#999999"
+    },
+    {
+        "name": "Yellow",
+        "hexCode": "#fcba03"
+    },
+    {
+        "name": "Red",
+        "hexCode": "#cf0808"
+    }
+]

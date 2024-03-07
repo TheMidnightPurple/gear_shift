@@ -1,0 +1,53 @@
+<div class="container car">
+    <div class="car-inner">
+        <div class="car-front" 
+            [style]="{'background-image': 'url(' + getBackground() + ')'}">
+            <div class="car__brand" [style]="{'background-image': 'url(' + getLogo() + ')'}"></div>
+            <div class="car__popover" [style]="{'background-image': 'url(' + getTop() + ')'}"></div>
+            <div class="row h-100 justify-content-end">
+                <div class="col-5 car__details pe-4 d-flex flex-column justify-content-between">
+                    <div class="row mt-2 d-flex justify-content-end">
+                        <div class="car__rarity d-flex align-items-center justify-content-center" 
+                        [style]="{'background': getCorrectRarityCode()}">
+                            <div class="car__rarity-name text-center" [style]="{'color': getCorrectRarityTextCode()}"                          
+                            >{{getCorrectRarityName()}}</div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="car__model d-flex justify-content-end">{{car?.year}} {{getCorrectBrand()}} {{getCorrectModel()}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="car-back">
+            <div class="row mt-3 ms-1">
+                <div class="col-3"><div>
+                        <div class="car__details-title">Max Speed</div>
+                        <div class="car__details-value">{{car?.info?.maxSpeed}} km/h</div>
+                    </div>
+                    <div>
+                        <div class="car__details-title">Drivetrain</div>
+                        <div class="car__details-value">{{car?.info?.driveTrain}}</div>
+                    </div>
+                    <div>
+                        <div class="car__details-title">Weight</div>
+                        <div class="car__details-value">{{car?.info?.weight}} Kg</div>
+                    </div>
+                    <div>
+                        <div class="car__details-title">0-100</div>
+                        <div class="car__details-value">{{car?.info?.zeroToSixty}}s</div>
+                    </div>
+                    <div>
+                        <div class="car__details-title">Price</div>
+                        <div class="car__details-value">{{car?.info?.price}}€</div>
+                    </div>
+                </div>
+                <div class="col-9 pe-4">
+                    <div class="car__details-value">{{car?.info?.about}}</div>
+                    <div class="car__number d-flex justify-content-end me-2 mt-3">{{car?.cardNumber}}/{{car?.totalCards}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

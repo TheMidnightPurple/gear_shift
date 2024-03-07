@@ -1,0 +1,27 @@
+.track {
+    margin-top: 120px;
+    border-radius: 15px;
+    padding: 50px;
+    background: white;
+    border: 5px solid #161d31;
+
+    &__name {
+        font-size: 35px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;
+        color: #161d31;;
+    }
+
+    &__timer-icon {
+        transform: scale(3);
+        margin-right: 40px;
+        color: #161d31;;
+    }
+
+    &__time {
+        font-size: 45px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;
+        color: #161d31;;
+    }
+}

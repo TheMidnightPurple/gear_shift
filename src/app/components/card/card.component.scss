@@ -1,0 +1,161 @@
+.car {
+    position: relative;
+    perspective: 1000px;
+
+    &__brand {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 65px;
+        height: 60px;
+        left: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    &__rarity {
+        width: 80px;
+        height: 20px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    &__rarity-name {
+        font-size: 12px;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    &__popover {
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 570px;
+        height: 320px;
+        z-index: 1;
+        transition: ease-in 0.2s;
+    }
+
+    &__model {
+        font-size: 18px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;  
+        font-style: italic;  
+        margin-bottom: 2px; 
+    }
+
+    &__model:hover {
+        transform: scale(1.02);
+    }
+
+    &__details {
+        background: rgb(0, 0, 0);
+        border-radius: 0px 15px 15px 0px;
+        clip-path: polygon(20% 0, 100% 0 , 100% 100%, 0 100%);
+        margin-right: 11px;
+        margin-bottom: -1px;
+    }
+
+    &__number {
+        font-size: 15px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;  
+        font-style: italic;     
+    }
+
+    &__details-title {
+        font-size: 15px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400; 
+    }
+
+    &__details-value {
+        font-size: 13px;
+        color: rgb(129, 129, 129);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400; 
+    }   
+
+    &__details-model {
+        font-size: 15px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400; 
+    }
+}
+
+.car-inner {
+    position: relative;
+    width: 570px;
+    height: 320px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.car:hover .car-inner {
+    transform: rotateY(180deg);
+}
+
+.car-front, .car-back {
+    box-shadow: 0px 0px 10px 3px rgb(26, 26, 26);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.car-front {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.car-back {
+    background: black;
+    position: absolute;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+
+@media (max-width: 1920px) {
+    .car {
+        width: 400px;
+        height: 250px;
+
+        &__brand {
+            width: 55px;
+            height: 45px;
+        }
+
+        &__popover {
+            width: 400px;
+            height: 250px;
+        }
+    
+        &__model {
+            font-size: 13px;
+            margin-bottom: 0.5px; 
+        }
+        
+        &__rarity {
+            font-size: 16px;  
+        }
+    }
+
+    .car-inner {
+        width: 400px;
+        height: 250px;
+    }
+
+}

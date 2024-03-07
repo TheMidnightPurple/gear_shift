@@ -1,0 +1,38 @@
+.stats {
+    border-radius: 15px;
+    background: #161d31;
+    color: #ececec;
+    padding: 50px;
+
+    &__title {
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+
+    &__sub-title {
+        margin-left: 15px;
+        font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+
+    &__icon {
+        border: 2px solid white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        transform: scale(1.2);
+    }
+
+    &__value {
+        font-size: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+
+    &__divider {
+        background: #ececec;
+        width: 2px;
+        border-radius: 10px;
+    }
+}

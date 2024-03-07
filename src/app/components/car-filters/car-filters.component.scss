@@ -1,0 +1,46 @@
+.car-filters {
+    background: #ececec;
+    border-radius: 15px;
+    padding-block: 40px;
+    padding-inline: 40px;
+    min-height: 84vh;
+
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    }
+
+    &__reset {
+        font-size: 20px;
+        font-weight: 200;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    }
+
+    &__filter-name {
+        font-size: 20px;
+        font-weight: lighter;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__color-box {
+        text-align: start;
+        display: flex;
+        justify-content: flex-start !important;
+    }
+
+    &__color-circle {
+        height: 20px;
+        width: 20px;
+        border-radius: 5px;
+    }
+
+    &__color-name {
+        margin-left: 5px;
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}

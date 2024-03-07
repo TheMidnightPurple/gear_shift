@@ -1,0 +1,32 @@
+.brand-details {
+    background: #ececec;
+    border-radius: 15px;
+    padding: 50px;
+
+    &__title {
+        font-size: 35px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    &__custom {
+        margin-left: 80px;
+    }
+
+    &__sub-title {
+        margin-left: 25px;
+        font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+
+    &__icon {
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(0, 0, 0);
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        transform: scale(1.2);
+    }
+}

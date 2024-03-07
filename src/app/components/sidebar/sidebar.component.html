@@ -1,0 +1,34 @@
+<div class="container-fluid h-100 w-100 d-flex justify-content-between flex-column sidebar">
+    <div class="row row-cols-1 text-center">
+        <div class="col-12" matTooltip="Home" matTooltipPosition="right">
+            <mat-icon routerLink="/home" ariaCurrentWhenActive="page" id="home" fontIcon="home" class="sidebar__custom" (click)="navigate('home')"></mat-icon>
+        </div>
+        <div class="col-12" matTooltip="My Cars" matTooltipPosition="right">
+            <mat-icon routerLink="/cars" routerLinkActive="active" ariaCurrentWhenActive="page" id="cars" fontIcon="directions_car" class="sidebar__custom active" (click)="navigate('cars')"></mat-icon>
+        </div>
+        <div class="col-12" matTooltip="Collections Book" matTooltipPosition="right">
+            <mat-icon routerLink="/collections" ariaCurrentWhenActive="page" id="collections" fontIcon="menu_book" class="sidebar__custom" (click)="navigate('book')"></mat-icon>
+        </div>
+        <div class="col-12" matTooltip="Open Packs" matTooltipPosition="right">
+            <mat-icon routerLink="/packs" ariaCurrentWhenActive="page" id="packs" fontIcon="inventory" class="sidebar__custom" (click)="navigate('packs')"></mat-icon>
+        </div>
+        
+        <div class="col-12" matTooltip="Trades" matTooltipPosition="right">
+            <mat-icon routerLink="/trades" ariaCurrentWhenActive="page" id="trades" fontIcon="swap_horizontal" class="sidebar__custom" (click)="navigate('trades')"></mat-icon>
+        </div>
+        <div class="col-12" matTooltip="My Friends" matTooltipPosition="right">
+            <mat-icon routerLink="/friends" ariaCurrentWhenActive="page" id="friends" fontIcon="group" class="sidebar__custom" (click)="navigate('friends')"></mat-icon>
+        </div>
+    </div>
+    <div class="row row-cols-1 text-center pb-5">
+        <div class="col-12" matTooltip="Information" matTooltipPosition="right">
+            <mat-icon routerLink="/info" ariaCurrentWhenActive="page" id="info" fontIcon="info" class="sidebar__custom" (click)="navigate('info')"></mat-icon>
+        </div>
+        <div class="col-12" matTooltip="Settings" matTooltipPosition="right">
+            <mat-icon routerLink="/settings" ariaCurrentWhenActive="page" id="settings" fontIcon="tune" class="sidebar__custom" (click)="navigate('settings')"></mat-icon>
+        </div>
+        <div class="col-12" matTooltip="Log out" matTooltipPosition="right">
+            <mat-icon routerLink="/logout" ariaCurrentWhenActive="page" id="logout" fontIcon="logout" class="sidebar__custom__log-out" (click)="navigate('logout')"></mat-icon>
+        </div>
+    </div>
+</div>

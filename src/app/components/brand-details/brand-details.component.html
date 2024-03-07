@@ -1,0 +1,37 @@
+<div class="container brand-details">
+    <div class="row">
+        <div class="col">
+            <div class="brand-details__title">More Details</div>
+        </div>
+    </div>
+    <div class="row px-5">
+        <div class="col-4 d-flex brand-details__logo justify-content-center">
+            <img width="350" src="https://upload.wikimedia.org/wikipedia/de/thumb/7/70/Porsche_Logo.svg/2560px-Porsche_Logo.svg.png">
+        </div>
+        <div class="col-8">
+            <div class="row brand-details__custom">
+                <div class="col d-flex align-items-center">
+                    <mat-icon fontIcon="location_on" class="brand-details__icon"></mat-icon>
+                    <div class="brand-details__sub-title">Stuttgart, Germany</div>
+                </div>
+            </div>
+            <div class="row mt-5 brand-details__custom">
+                <div class="col d-flex align-items-center">
+                    <mat-icon fontIcon="calendar_month" class="brand-details__icon"></mat-icon>
+                    <div class="brand-details__sub-title">1931</div>
+                </div>
+            </div>
+            <div class="row mt-5 brand-details__custom">
+                <div class="col d-flex align-items-center">
+                    <mat-icon fontIcon="person" class="brand-details__icon"></mat-icon>
+                    <div class="brand-details__sub-title">Ferdinand Porsche</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 mb-2">
+        <div class="col brand-details__card">
+            <app-card [car]="car"></app-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Legendary",
+        "hexcode": "#D3B000",
+        "textHexcode": "#685700"
+    },
+    {
+        "name": "Epic",
+        "hexcode": "#872bff",
+        "textHexcode": "#43187c"
+    },
+    {
+        "name": "Ultra Rare",
+        "hexcode": "#b00000",
+        "textHexcode": "#470000"
+    },
+    {
+        "name": "Rare",
+        "hexcode": "#01068c",
+        "textHexcode": "#757aff"
+    },
+    {
+        "name": "Normal",
+        "hexcode": "#9e9e9e",
+        "textHexcode": "#ffffff"
+    }
+]
