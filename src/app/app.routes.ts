@@ -3,6 +3,7 @@ import { PacksPageComponent } from './pages/packs-page/packs-page.component';
 import { TradesPageComponent } from './pages/trades-page/trades-page.component';
 import { CarsPageComponent } from './pages/cars-page/cars-page.component';
 import { CarPageComponent } from './pages/car-page/car-page.component';
+import { CollectionsPageComponent } from './pages/collections-page/collections-page.component';
 
 export const routes: Routes = [
     {
@@ -17,6 +18,9 @@ export const routes: Routes = [
                 path: 'car', component: CarPageComponent
             }
         ]
+    },
+    {
+        path: 'collections', component: CollectionsPageComponent
     },
     {
         path: 'packs', component: PacksPageComponent

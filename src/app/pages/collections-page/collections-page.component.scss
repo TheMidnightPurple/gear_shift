@@ -1,0 +1,25 @@
+mat-paginator {
+  position: relative;
+  background-color: #ececec;
+  border-radius: 15px;
+  width: 19%;
+  height: 56px;
+}
+
+.grid {
+  height: 68vh;
+}
+
+.grid-no-results {
+  height: 79vh;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.content {
+  height: 79vh;
+}
+
+.box {
+  padding-right: -100px;
+}

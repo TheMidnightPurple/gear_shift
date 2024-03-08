@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Alfa Romeo",
+        "country": "Italy",
+        "logo": "../../assets/cars/Alfa_Romeo/logo.png",
+        "background": "../../assets/cars/Alfa_Romeo/background.png"
+    },
+    {
+        "name": "Audi",
+        "country": "Germany",
+        "logo": "../../assets/cars/Audi/logo.png",
+        "background": "../../assets/cars/Audi/background.png"
+    },
+    {
+        "name": "BMW",
+        "country": "Germany",
+        "logo": "../../assets/cars/BMW/logo.png",
+        "background": "../../assets/cars/BMW/background.png"
+    },
+    {
+        "name": "Lamborghini",
+        "country": "Italy",
+        "logo": "../../assets/cars/Lamborghini/logo.png",
+        "background": "../../assets/cars/Lamborghini/background.png"
+    },
+    {
+        "name": "Lexus",
+        "country": "Japan",
+        "logo": "../../assets/cars/Lexus/logo.png",
+        "background": "../../assets/cars/Lexus/background.png"
+    },
+    {
+        "name": "McLaren",
+        "country": "England",
+        "logo": "../../assets/cars/McLaren/logo.png",
+        "background": "../../assets/cars/McLaren/background.png"
+    },
+    {
+        "name": "Porsche",
+        "country": "Germany",
+        "logo": "../../assets/cars/Porsche/logo.png",
+        "background": "../../assets/cars/Porsche/background.png"
+    },
+    {
+        "name": "Peugeot",
+        "country": "France",
+        "logo": "../../assets/cars/Peugeot/logo.png",
+        "background": "../../assets/cars/Peugeot/background.png"
+    },
+    {
+        "name": "Pininfarina",
+        "country": "Italy",
+        "logo": "../../assets/cars/Pininfarina/logo.png",
+        "background": "../../assets/cars/Pininfarina/background.png"
+    }
+]

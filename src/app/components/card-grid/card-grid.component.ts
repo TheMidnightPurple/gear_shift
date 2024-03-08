@@ -9,41 +9,38 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-card-grid',
   standalone: true,
-  imports: [ MatGridListModule, CardComponent, NoResultsComponent, MatPaginatorModule ],
+  imports: [
+    MatGridListModule,
+    CardComponent,
+    NoResultsComponent,
+    MatPaginatorModule,
+  ],
   templateUrl: './card-grid.component.html',
-  styleUrl: './card-grid.component.scss'
+  styleUrl: './card-grid.component.scss',
 })
 export class CardGridComponent {
   @Input()
-  carsList: Car[] = []
+  carsList: Car[] = [];
 
   pageIndex: number = 0;
   pageSize: number = 0;
   length: number = 0;
   pageEvent: PageEvent = new PageEvent();
 
-  constructor (private router: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.pageIndex = 0;
     this.pageSize = 9;
-    this.length = this.carsList.length;    
-  }
-
-  ngOnChanges(): void {
-    this.pageIndex = 0;
-    this.length = this.carsList.length;   
-  
+    this.length = this.carsList.length;
   }
 
   navigateToCar(car: Car): void {
-    this.router.navigate(
-      ['/cars/car'],
-      { queryParams: { id: car.id } }
-    );
+    this.router.navigate(['/cars/car'], { queryParams: { id: car.id } });
   }
 
   handlePageEvent(e: PageEvent) {
+    console.log(e.pageIndex);
     this.pageEvent = e;
     this.length = e.length;
     this.pageSize = e.pageSize;
