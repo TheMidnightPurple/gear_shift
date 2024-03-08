@@ -1,9 +1,5 @@
-.cc {
+.page {
   margin-left: -20px;
-}
-
-.grid {
-  min-height: 79vh;
 }
 
 .grid-no-results {
@@ -11,17 +7,45 @@
   grid-template-columns: 1fr;
 }
 
-mat-paginator {
-  background-color: #ececec;
-  border-radius: 15px;
-  width: 25%;
-}
-
 .car {
   cursor: pointer;
   transition: ease-in 0.2s;
+  margin-right: 30px;
+  margin-top: 5px;
 
   &:hover {
     transform: scale(1.02);
   }
+}
+
+.content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  max-height: 79vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  border-radius: 30px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background: #8f8f8f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ececec;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 30px;
 }

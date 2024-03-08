@@ -1,6 +1,15 @@
-<div class="container-fluid w-100 h-100 cc">
+<div class="container-fluid w-100 h-100 page">
   @if (carsList.length > 0) {
-  <mat-grid-list cols="3" rowHeight="280px" class="grid">
+  <div
+    class="content"
+    [style]="{ 'overflow-y': carsList.length > 9 ? 'scroll' : 'hidden' }"
+  >
+    @for (car of carsList; track car) {
+    <app-card class="car" [car]="car" (click)="navigateToCar(car)"></app-card>
+    }
+  </div>
+
+  <!-- <mat-grid-list cols="3" rowHeight="280px" class="grid">
     @for (car of carsList.slice(pageSize * pageIndex, pageSize * (1 +
     pageIndex)); track car) {
     <mat-grid-tile [id]="car.id">
@@ -20,7 +29,7 @@
       aria-label="Select page"
     >
     </mat-paginator>
-  </div>
+  </div> -->
   } @else {
   <div class="grid-no-results h-100 w-100">
     <app-no-results></app-no-results>
