@@ -1,16 +1,16 @@
 <div class="container-fluid mt-1">
-    <div class="row">
-        <div class="col-xl-3 col-big">
-            <app-car-filters 
-                (brandChange)="selectBrand($event)" 
-                (yearChange)="selectYear($event)"
-                (rarityChange)="selectRarities($event.rarity, $event.checked)"
-            >
-            </app-car-filters>
-        </div>
-        <div class="col">
-            <app-card-grid [carsList]="filteredList()"></app-card-grid>
-        </div>
-        <router-outlet></router-outlet>
+  <div class="row">
+    <div class="col-xl-3 col-big">
+      <app-car-filters
+        (brandChange)="selectBrand($event)"
+        (yearChange)="selectYear($event)"
+        (rarityChange)="selectRarities($event.rarity, $event.checked)"
+      >
+      </app-car-filters>
     </div>
+    <div class="col">
+      <app-card-grid [carsList]="filteredList()"></app-card-grid>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
