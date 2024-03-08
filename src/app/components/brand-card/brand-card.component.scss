@@ -8,9 +8,33 @@
     transform: scale(1.05);
   }
 
+  &__header {
+    width: 40%;
+  }
+
   &__header-image {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &__details {
+    margin-top: -3px;
+  }
+
+  &__progress {
+    width: 42%;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  &__total {
+    margin-top: 7px;
+    margin-left: 10px;
+    font-weight: lighter;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: 500;
+    color: #949494;
   }
 }

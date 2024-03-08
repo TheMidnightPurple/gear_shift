@@ -1,12 +1,22 @@
 <mat-card class="brand-card">
   <mat-card-header class="mt-2">
-    <div
-      mat-card-avatar
-      class="brand-card__header-image"
-      [style]="{ 'background-image': 'url(' + brand?.logo + ')' }"
-    ></div>
-    <mat-card-title>{{ brand?.name }}</mat-card-title>
-    <mat-card-subtitle>{{ brand?.country }}</mat-card-subtitle>
+    <div class="d-flex brand-card__header">
+      <div
+        mat-card-avatar
+        class="brand-card__header-image me-2"
+        [style]="{ 'background-image': 'url(' + brand?.logo + ')' }"
+      ></div>
+      <div class="brand-card__details">
+        <mat-card-title>{{ brand?.name }}</mat-card-title>
+        <mat-card-subtitle>{{ brand?.country }}</mat-card-subtitle>
+      </div>
+    </div>
+    <mat-progress-bar
+      mode="determinate"
+      value="40"
+      class="brand-card__progress"
+    ></mat-progress-bar>
+    <div class="brand-card__total">4/50</div>
   </mat-card-header>
   <img
     class="mt-2"

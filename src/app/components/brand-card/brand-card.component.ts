@@ -1,15 +1,16 @@
 import { Component, Input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { Brand } from '../../interfaces/brand';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @Component({
   selector: 'app-brand-card',
   standalone: true,
-  imports: [MatCardModule],
+  imports: [MatCardModule, MatProgressBarModule],
   templateUrl: './brand-card.component.html',
-  styleUrl: './brand-card.component.scss'
+  styleUrl: './brand-card.component.scss',
 })
 export class BrandCardComponent {
   @Input()
-  brand: Brand | undefined = undefined
+  brand: Brand | undefined = undefined;
 }
