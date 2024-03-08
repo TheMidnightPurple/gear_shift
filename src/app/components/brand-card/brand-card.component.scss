@@ -1,16 +1,16 @@
 .brand-card {
-    max-width: 450px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: ease-in 0.2s;
+  width: 400px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
 
-    &:hover {
-        transform: scale(1.05);
-    }
+  &:hover {
+    transform: scale(1.05);
+  }
 
-    &__header-image {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+  &__header-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

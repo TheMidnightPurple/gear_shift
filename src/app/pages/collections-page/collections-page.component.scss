@@ -1,25 +1,40 @@
-mat-paginator {
-  position: relative;
-  background-color: #ececec;
-  border-radius: 15px;
-  width: 19%;
-  height: 56px;
-}
-
-.grid {
-  height: 68vh;
-}
-
 .grid-no-results {
   height: 79vh;
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .content {
-  height: 79vh;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  max-height: 70vh;
+  overflow-x: hidden;
+  margin-left: 20px;
 }
 
-.box {
-  padding-right: -100px;
+.brand {
+  margin-top: 20px;
+}
+
+::-webkit-scrollbar {
+  border-radius: 50px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: #8f8f8f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ececec;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 50px;
 }

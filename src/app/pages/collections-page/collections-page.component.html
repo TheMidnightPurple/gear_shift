@@ -12,32 +12,15 @@
       </mat-form-field>
     </div>
   </div>
-  <div class="row content">
+  <div class="row">
     @if (filteredList.length > 0) {
-    <div class="col grid">
-      <mat-grid-list cols="4" rowHeight="380px" class="me-2">
-        @for (brand of filteredList.slice(pageSize * pageIndex, pageSize * (1 +
-        pageIndex)); track brand) {
-        <mat-grid-tile>
-          <app-brand-card [brand]="brand"></app-brand-card>
-        </mat-grid-tile>
-        }
-      </mat-grid-list>
-    </div>
     <div
-      class="row w-100 mx-0 px-0 d-flex box mt-3 justify-content-end align-items-bottom"
+      class="content"
+      [style]="{ 'overflow-y': filteredList.length > 6 ? 'scroll' : 'hidden' }"
     >
-      <mat-paginator
-        #paginator
-        class="cards-paginator"
-        (page)="handlePageEvent($event)"
-        [length]="length"
-        [pageSize]="pageSize"
-        [pageIndex]="pageIndex"
-        [hidePageSize]="true"
-        aria-label="Select page"
-      >
-      </mat-paginator>
+      @for (brand of filteredList; track brand) {
+      <app-brand-card [brand]="brand" class="brand"></app-brand-card>
+      }
     </div>
     } @else {
     <div class="grid-no-results h-100 w-100">

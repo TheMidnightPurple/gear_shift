@@ -1,8 +1,19 @@
 <mat-card class="brand-card">
-    <mat-card-header class="mt-2">
-      <div mat-card-avatar class="brand-card__header-image" [style]="{'background-image': 'url(' + brand?.logo + ')'}"></div>
-      <mat-card-title>{{brand?.name}}</mat-card-title>
-      <mat-card-subtitle>{{brand?.country}}</mat-card-subtitle>
-    </mat-card-header>
-    <img class="mt-2" mat-card-image src={{brand?.background}} alt="brand" width="380px" height="230px">
+  <mat-card-header class="mt-2">
+    <div
+      mat-card-avatar
+      class="brand-card__header-image"
+      [style]="{ 'background-image': 'url(' + brand?.logo + ')' }"
+    ></div>
+    <mat-card-title>{{ brand?.name }}</mat-card-title>
+    <mat-card-subtitle>{{ brand?.country }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    class="mt-2"
+    mat-card-image
+    src="{{ brand?.background }}"
+    alt="brand"
+    width="400px"
+    height="230px"
+  />
 </mat-card>
