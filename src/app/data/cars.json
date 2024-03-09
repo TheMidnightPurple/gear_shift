@@ -359,5 +359,24 @@
       "price": "196 600",
       "about": "Sports-car specialist Porsche has been crafting impossibly delicious 911 models for decades, but the 2024 911 GT3 and GT3 RS models are its most uncompromised and outrageously quick versions to date. These track-day champs are powered by a naturally aspirated 4.0-liter six-cylinder engine that howls to a 9000 rpm redline. In GT3 guise, the impact is very impressive."
     }
+  },
+  {
+    "id": 20,
+    "brand": "BMW",
+    "year": "2021",
+    "model": "M4",
+    "colorName": "green",
+    "firstColor": "#000000",
+    "rarity": "legendary",
+    "cardNumber": 1,
+    "totalCards": 1,
+    "info": {
+      "maxSpeed": 300,
+      "driveTrain": "RWD",
+      "weight": 1596,
+      "zeroToSixty": 3.5,
+      "price": "196 600",
+      "about": "Sports-car specialist Porsche has been crafting impossibly delicious 911 models for decades, but the 2024 911 GT3 and GT3 RS models are its most uncompromised and outrageously quick versions to date. These track-day champs are powered by a naturally aspirated 4.0-liter six-cylinder engine that howls to a 9000 rpm redline. In GT3 guise, the impact is very impressive."
+    }
   }
 ]

@@ -6,38 +6,49 @@ import { CarPageComponent } from './pages/car-page/car-page.component';
 import { CollectionsPageComponent } from './pages/collections-page/collections-page.component';
 
 export const routes: Routes = [
-    {
-        path: 'home', component: PacksPageComponent
-    },
-    {
-        path: 'cars', children: [
-            {
-                path: '', component: CarsPageComponent
-            },
-            {
-                path: 'car', component: CarPageComponent
-            }
-        ]
-    },
-    {
-        path: 'collections', component: CollectionsPageComponent
-    },
-    {
-        path: 'packs', component: PacksPageComponent
-    },
-    {
-        path: 'trades', component: TradesPageComponent
-    },
-    {
-        path: 'friends', component: CarsPageComponent
-    },
-    {
-        path: 'info', component: PacksPageComponent
-    },
-    {
-        path: 'settings', component: TradesPageComponent
-    },
-    {
-        path: 'logout', component: CarsPageComponent
-    }
+  {
+    path: 'home',
+    component: PacksPageComponent,
+  },
+  {
+    path: 'cars',
+    children: [
+      {
+        path: '',
+        component: CarsPageComponent,
+      },
+      {
+        path: 'car',
+        component: CarPageComponent,
+      },
+    ],
+  },
+  {
+    path: 'collections',
+    component: CollectionsPageComponent,
+  },
+  {
+    path: 'packs',
+    component: PacksPageComponent,
+  },
+  {
+    path: 'trades',
+    component: TradesPageComponent,
+  },
+  {
+    path: 'friends',
+    component: CarsPageComponent,
+  },
+  {
+    path: 'info',
+    component: PacksPageComponent,
+  },
+  {
+    path: 'settings',
+    component: TradesPageComponent,
+  },
+  {
+    path: 'logout',
+    component: CarsPageComponent,
+  },
 ];
